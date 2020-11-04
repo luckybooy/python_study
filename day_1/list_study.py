@@ -16,10 +16,15 @@ print("--------------------------------")
 print(name[-1])
 name[3]='魏总'        #修改索引处元素值
 print(name)
-
-
+name.insert(0, '🐂🍺')
+print(name)
 print(len([1, 2, 3, 4]))
 
 print(len(name))
 
 print(['Hi'] * 4)
+
+name.pop()
+print("删除末尾的元素: ", name)
+name.pop(2)
+print("删除索引2处的元素： ", name)
