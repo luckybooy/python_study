@@ -7,3 +7,6 @@ for letter in "hello 萧然":
 
 for i in range(6):
     print(i)
+
+for j in range(0, 10 ,3):
+    print(j)
