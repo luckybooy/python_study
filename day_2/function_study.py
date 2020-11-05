@@ -14,3 +14,13 @@ def sum (num1, num2):
     return res
 
 print(sum(1, 3))
+
+def calcu (num1, num2):
+    if not(isinstance(num1, (int, float))) and isinstance(num2,(int, float)):
+        print("invalid parameters")
+    return num1 + num2
+
+print(calcu(3, 5))
+
+# 无效参数事例
+print(calcu('23', 5))
