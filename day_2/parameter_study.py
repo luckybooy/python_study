@@ -9,7 +9,7 @@ def print_user_info(name, age, sex='男',hobby='basketball'):    #只有在形�
     print("年龄：{}岁".format(age), end=',')
     print("性别:{}".format(sex), end=',')
     print("爱好：{}".format(hobby))
-    return;
+    return
 
 print_user_info('xiaoming', 18, 'man')
 print_user_info('萧然', 22)
