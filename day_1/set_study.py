@@ -17,9 +17,9 @@ set1.remove(6)
 print(set1)
 
 set2 = set('hello')
-print("set2的集合", set2)
+print("set2的集合:", set2)
 set3 = set(['p', 'y', 't', 'h', 'o', 'n'])
-print("set3的集合", set3)
+print("set3的集合:", set3)
 #两个集合的交集 '&'
 print(set2 & set3)
 #两个集合的并集 '|'
