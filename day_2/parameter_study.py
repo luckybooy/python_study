@@ -11,5 +11,6 @@ def print_user_info(name, age, sex='男',hobby='basketball'):    #只有在形�
     print("爱好：{}".format(hobby))
     return
 
+
 print_user_info('xiaoming', 18, 'man')
 print_user_info('萧然', 22)
