@@ -36,4 +36,8 @@ def print_user_info(name, age, **friend):
 
 
 #注意传入参数的形式，尤其是不定长参数friend的值是元组的形式，其输出结果是字典值
+'''
+在python中，可以通过参数名来给函数传递参数，而不用关系函数定义时参数列表的顺序，
+这种形式称之为"关键字参数"。
+'''
 print_user_info(name='lihua', age=18, friend=('xiaoming', 'goudaner', 'litian'))
