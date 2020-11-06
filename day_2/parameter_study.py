@@ -41,3 +41,17 @@ def print_user_info(name, age, **friend):
 这种形式称之为"关键字参数"。
 '''
 print_user_info(name='lihua', age=18, friend=('xiaoming', 'goudaner', 'litian'))
+
+"""
+定义函数时强制使用关键字参数来传值，此时需要将强制使用关键字参数放到某个*参数或者单个*后边
+就能达到效果。
+"""
+
+def print_student_info(stu_no, *, stu_name, stu_age):
+    print("学号是:{}".format(stu_no), end=';')
+    print("学生姓名是:{}".format(stu_name), end=';')
+    print("学生的年龄是:{}".format(stu_age))
+    return ;
+
+print_student_info('10002',stu_name='lihua', stu_age=20)    #关键字参数传值 "参数名="
+print_student_info('10001', 'xiaoming', 18)
