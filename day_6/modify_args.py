@@ -6,7 +6,7 @@
 """
 修改类的属性值
 """
-class modify_ages:
+class modify_ages():
     arg1 = "cup"
     arg2 = "car"
 
