@@ -34,3 +34,4 @@ if __name__ == '__main__':
     #打印构造函数中的属性
     print(userInfo2.__dict__)
     print(userInfo2.get_name())
+    print(userInfo2._UserInfo__account)
