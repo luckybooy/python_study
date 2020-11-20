@@ -26,3 +26,16 @@ else:
 cc = "Welcome to HenNan ZhengZhou..."
 findall2 = re.findall('[A-Z]', cc)
 print(findall2)
+
+# '\d' 表示 匹配所有数字字符的规则 其目的是和'[0-9]' 表达的意思是一样的
+dd = '12, xiaoming, 23, 狗蛋儿, 45, heihei, 88'
+findall3 = re.findall('\d', dd)
+print(findall3)
+
+findall4 = re.findall('[0-9]', dd)
+print(findall4)
+
+ee = '"12san", san21, 45liu,qi89'
+ff = 'xiaoming, 22, gou, 66, qiqi'
+findall5 = re.findall('\A' ,ff)
+print(findall5)
