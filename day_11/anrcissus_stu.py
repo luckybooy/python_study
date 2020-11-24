@@ -24,3 +24,10 @@ while num > 0:
     reversed_num = reversed_num * 10 + num % 10
     num //= 10
 print(reversed_num)
+
+# 百钱百鸡 公的5元一只，母的3月一只，幼崽1月三只，现有100元，买100只，可以买到公、母、幼崽各多少只
+for x in range(0, 22):
+    for y in range(0, 33):
+        z = 100 - x - y
+        if 5*x + 3*y + z/3 == 100:
+            print(x, y, z)
