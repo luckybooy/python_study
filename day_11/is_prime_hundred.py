@@ -1,6 +1,11 @@
+
+
 from math import sqrt
+
+list = []
+# 2～100 之间的素数
 for num in range(2, 100):
-    list = []
+
     temp = int(sqrt(num))
     is_prime = False
 
@@ -10,5 +15,23 @@ for num in range(2, 100):
     if is_prime and num != 1:
         print('', end='')
     else:
-        print(num, end=' ')
+        # print(num, end=' ')
+        list.append(num)
+print(list)
 
+"""
+
+import math
+li = []
+for num in range(2, 100):
+    is_prime = True
+    for factor in range(2, int(math.sqrt(num)) + 1):
+        if num % factor == 0:
+            is_prime = False
+            break
+    if is_prime:
+        li.append(num)
+        # print(num, end=' ')
+print(li)
+
+"""
