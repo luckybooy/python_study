@@ -10,5 +10,6 @@ def odd():
     print('step 3')
     yield (3)
 
+
 o = odd()
 print(next(o))
