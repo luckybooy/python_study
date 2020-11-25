@@ -2,7 +2,7 @@
 
 from math import sqrt
 
-list = []
+list1 = []
 # 2～100 之间的素数
 for num in range(2, 100):
 
@@ -16,8 +16,8 @@ for num in range(2, 100):
         print('', end='')
     else:
         # print(num, end=' ')
-        list.append(num)
-print(list)
+        list1.append(num)
+print(list1)
 
 """
 
