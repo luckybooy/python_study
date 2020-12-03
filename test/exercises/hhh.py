@@ -3,21 +3,45 @@
 # author:xiaoran
 # date:2020-11-23 1:47 PM
 
-x = int(input("x = "))
-y = int(input("y = "))
+t = ('骆昊', 38, True, '四川成都')
+print(t)
+# 获取元组中的元素
+print(t[0])
+print(t[3])
+# 遍历元组中的值
+for member in t:
+    print(member)
 
-if x > y:
-    x, y = y, x
-for factor in range(x, 0, -1):
-    if x % factor == 0 and y % factor == 0:
-        print("%d和%d的最大公约数是%d" % (x, y, factor))
-        print("%d和%d的最小公倍数是%d" % (x, y, x * y // factor))
-        break
+t = ('王大锤', 20, True, '云南昆明')
+print(t)
+# 将元组转换成列表
+person = list(t)
+print(person)
+person[0] = '李小龙'
+person[1] = 25
+print(person)
 
-a = 5
-b = 2
-print(a / b)  # 2.5 '/' 就表示 除
-print(a // b)  # 2 "//"向下取整 表示 整除
+fruits_list = ['apple', 'banana', 'orange']
+fruits_tuple = tuple(fruits_list)
+print(fruits_tuple)
 
-for i in range(6):
-    print("*" * i)
+set1 = {1, 2, 3, 4, 5, 5}
+print(set1)
+print(len(set1))
+
+set2 = set(range(1, 10))
+set3 = set((1, 2, 3, 4, 5, 5))
+print(set2, set3)
+set4 = {x for x in range(1, 100) if x % 3 == 0 or x % 5 == 0}
+print('set4 = {}'.format(set4))
+
+set1.add(77)
+set1.add(88)
+set2.update([11, 12])
+print(set2)
+set2.discard(5)
+if 4 in set2:
+    set2.remove(4)
+print(set1, set2)
+print(set3.pop())
+print(set3)
