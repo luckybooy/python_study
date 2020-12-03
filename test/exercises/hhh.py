@@ -14,13 +14,10 @@ for factor in range(x, 0, -1):
         print("%d和%d的最小公倍数是%d" % (x, y, x * y // factor))
         break
 
-
-
-
 a = 5
 b = 2
-print(a/b)   # 2.5 '/' 就表示 除
-print(a//b)  # 2 "//"向下取整 表示 整除
+print(a / b)  # 2.5 '/' 就表示 除
+print(a // b)  # 2 "//"向下取整 表示 整除
 
-for i  in range(6):
-    print("*"*i)
+for i in range(6):
+    print("*" * i)
