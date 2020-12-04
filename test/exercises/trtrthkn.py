@@ -114,13 +114,36 @@ for num in range(1, 100):
     else:
         print('', end='')
 print(list_num)
-"""
-import os
-import shutil
 
-source_path = os.path.abspath(r'/Users/xiaoranya/Documents/work/company/project/小短案件11-23/1127====/案件资料--1127/公用的')
-target_path = os.path.abspath(r'/Users/xiaoranya/Desktop/test')
-for root, dirs, files in os.walk("/Users/xiaoranya/Desktop/test", topdown=False):
-    for name in dirs:
-        name_1 = os.path.join(root, name)
-        # print(name_1)
+import random, time
+def generate_code(code_len=4):
+    all_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    last_pos = len(all_chars) - 1
+    print(last_pos)
+    code = ''
+    for _ in range(code_len):
+        index = random.randint(0, last_pos)
+        code += all_chars[index]
+    print(code)
+
+
+generate_code()
+time.sleep(1)
+"""
+
+def main():
+    num = int(input('Number of rows: '))
+    yh = [[]] * num
+    for row in range(len(yh)):
+        yh[row] = [None] * (row + 1)
+        for col in range(len(yh[row])):
+            if col == 0 or col == row:
+                yh[row][col] = 1
+            else:
+                yh[row][col] = yh[row - 1][col] + yh[row - 1][col - 1]
+            print(yh[row][col], end='\t')
+        print()
+
+
+if __name__ == '__main__':
+    main()
