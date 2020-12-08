@@ -68,6 +68,12 @@ class Teacher(Person):
     def touch(self, course):
         print('%s%s正在讲%s。' % (self._name, self._title, course))
 
+    def play(self):
+        if self._age < 18:
+            print('%s正在玩过家家。' % self._name)
+        else:
+            print('%s正在打篮球。' % self._name)
+
 
 def main():
     stu = Student('xiaoran', 22, '大三')
