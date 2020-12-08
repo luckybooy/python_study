@@ -30,6 +30,7 @@ class Person(object):
         else:
             print('%s正在看动画片。' % self._name)
 
+
 class Student(Person):
     """学生"""
 
@@ -47,6 +48,7 @@ class Student(Person):
 
     def study(self, course):
         print('%s的%s正在学习%s。' % (self._grade, self._name, course))
+
 
 class Teacher(Person):
     """老师"""
@@ -66,6 +68,7 @@ class Teacher(Person):
     def touch(self, course):
         print('%s%s正在讲%s。' % (self._name, self._title, course))
 
+
 def main():
     stu = Student('xiaoran', 22, '大三')
     stu.study('English')
@@ -75,6 +78,7 @@ def main():
     t.watch_tv()
     t.play()
     t.touch('语文')
+
 
 if __name__ == '__main__':
     main()
