@@ -32,3 +32,5 @@ salary:{3}
 ====================info of ========================
 """.format(name, age, job, salary)
 print(info2)
+
+# push test
