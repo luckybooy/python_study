@@ -50,14 +50,15 @@ print("最终值为:{}".format(a))
 
 '''
 set 集合无序，唯一'''
+
+
 def change_set(a):
     print("初始值为：{}".format(a))
     a.add('xiaopeng')
     print("变更后的值为：{}".format(a))
-    return ;
+    return
+
 
 a = set(['xiaohua', 'xiaohong', 'lidan'])
 change_set(a)
 print("最终值为:{}".format(a))
-
-
