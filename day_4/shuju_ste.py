@@ -33,3 +33,10 @@ print(names)
 index = names.index('钱七')
 print(index)
 
+names.append("张三")
+print(names)
+
+# 统计数量
+counts = names.count("张三")
+print(counts)
+
