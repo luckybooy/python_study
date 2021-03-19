@@ -48,4 +48,5 @@ print(names2)
 names[1] = '张思'
 print(names)
 print("……………………………………………………………………")
+
 print(names2)
