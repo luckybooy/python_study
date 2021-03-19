@@ -2,6 +2,8 @@
 # FileName : shuju_ste.py 
 # Author : xiaoran
 # Date : 2021-03-18 23:10
+import copy
+
 names = ['张三', '李四', '王武', '马六', '钱七']
 print(names)
 
@@ -40,3 +42,10 @@ print(names)
 counts = names.count("张三")
 print(counts)
 
+print('*********************************************************************')
+names2=copy.copy(names)
+print(names2)
+names[1]='张思'
+print(names)
+print("……………………………………………………………………")
+print(names2)
