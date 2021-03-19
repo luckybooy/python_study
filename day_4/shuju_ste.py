@@ -42,6 +42,7 @@ print(names)
 counts = names.count("张三")
 print(counts)
 
+# 浅拷贝，只拷贝引用
 print('*********************************************************************')
 names2 = copy.copy(names)
 print(names2)
