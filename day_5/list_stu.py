@@ -22,4 +22,4 @@ if salary.isdigit():
     print("__________________________________________")
     # 2.遍历数组带索引
     for index, item in enumerate(product_list):
-        print(index,item)
+        print(index, item)
