@@ -23,3 +23,6 @@ if salary.isdigit():
     # 2.遍历数组带索引
     for index, item in enumerate(product_list):
         print(index, item)
+
+print("红色数字 \033[31;1m%s\033[0m" %(123))
+print("\033[31;1m hello \033[0m")
