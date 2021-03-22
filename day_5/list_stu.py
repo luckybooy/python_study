@@ -25,4 +25,5 @@ if salary.isdigit():
         print(index, item)
 
 print("红色数字 \033[31;1m%s\033[0m" %(123))
-print("\033[31;1m hello \033[0m")
+# \033[颜色对应的数字;1m 需要显色的内容 \033[0m 固定格式
+print("\033[34;1m hello \033[0m")
