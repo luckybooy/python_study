@@ -2,13 +2,14 @@
 # FileName : create_Doc.py 
 # Author : xiaoran
 # Date : 2021-07-28 15:22
+import os
 
 import docx
 
 from docx import Document
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
-from docx.shared import Pt      #磅数
-from docx.oxml.ns import qn     #中文格式
+from docx.shared import Pt  # 磅数
+from docx.oxml.ns import qn  # 中文格式
 
 # document = Document()
 # p1 = document.add_paragraph()  # 初始化建立第一个自然段
@@ -24,9 +25,13 @@ from docx.oxml.ns import qn     #中文格式
 
 list_tem = ['张三', '李四', '王武', '钱六', '狗蛋儿', '建国']
 list_temp = ['张三', '李四']
+save_path = "/Users/ranchuangyun/Documents/exercise/python/python_study/files_set/"
+save_path1 = "/Users/ranchuangyun/Documents/exercise/python/python_study/tools/create_Doc.py"
+if not os.path.exists(save_path):
+    # os.makedirs(save_path)
+    print('nonono')
 
 for i in list_tem:
-
     docx_test = docx.Document()
     pp = docx_test.add_paragraph()
     font_set = pp.add_run(i)
@@ -36,5 +41,6 @@ for i in list_tem:
     # font_set.font.bold = True  # 设置加粗
     # pp.space_after = Pt(5)  # 段后距离5磅
     # pp.space_before = Pt(5)  # 段前距离5磅
+    # print(i)
 
     docx_test.save("{}.docx".format(i))
